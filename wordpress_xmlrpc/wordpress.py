@@ -258,3 +258,16 @@ class WordPressPostType(WordPressBase):
         if hasattr(self, 'name'):
             return self.name
         return unicode('')
+        
+class WordPressPostMeta(WordPressBase):
+    definition ={
+        'meta_id' : 'meta_id',
+        'post_id' : 'post_id',
+        'meta_key' : 'meta_key',
+        'meta_value' : 'meta_value',
+    }
+        
+    def __str__(self):
+        if hasattr(self, 'name'):
+            return self.name
+        return unicode('')
